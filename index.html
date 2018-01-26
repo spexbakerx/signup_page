@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Greg's List</title>
-	<meta name="description" content="This is a Greg's List search result page.">
+	<title>AnalogSea Signup</title>
+	<meta name="description" content="Signup page for AnalogSea">
 
 	 <!-- fonts  -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
 
 
   	<!-- reset -->
-  	
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
 
   	<!-- styles -->
   	<link rel="stylesheet" type="text/css" href="styles/main.css">
@@ -20,9 +20,50 @@
 </head>
 <body>
 
+	<!-- logo -->
 	<section class="logo">
 	<img src="images/logo.png">
 	</section>
+
+	<main>
+
+		<!-- signup box -->
+		<section>
+			<div class="form-box">
+
+				<!-- signup form -->
+				<form class='demo-form' action="/signup/" method='post'>
+      			<h1>Signup</h1>
+ 
+    			<fieldset name="contact-info">
+      
+      			<legend>Contact info</legend>
+
+      			<label for="email">Email</label>
+      			<input type="email" name='email' id='email' placeholder="foo@bar.com" required/>
+
+      			<label for="password">Password</label>
+      			<input type="password" name='password' id='email' placeholder="1234passw0rd" required/>
+
+      			</fieldset>
+
+      			<label for="submit"></label>
+      			<button type='submit'>Sign up</button>
+
+      			</form>
+
+			</div>
+		</section>
+
+		<!-- Bottom Login -->
+		<section class="login">
+			<h2>Already have an account? <a href="/login">Log in</a></h2>
+		</section>
+
+
+	</main>
+
+
 
 
 

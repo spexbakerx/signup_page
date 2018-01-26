@@ -1,11 +1,18 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
 	background-color: #298eea;
-	font-family: 'Poppins' sans-serif;
+	font-family: 'Karla', sans-serif;
+	font-size: 16px;
 }
 
 section.logo {
 	text-align: center;
-	margin: 100px auto 40px auto;
+	margin: 60px auto 30px auto;
 }
 
 .logo img{
@@ -14,4 +21,107 @@ section.logo {
 	width: auto;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.form-box {
+	width: 400px;
+	padding: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border-radius: 3px;
+}
+
+.form-box h1{
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+
+input, textarea {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+	outline: none;
+}
+ 
+input:focus, textarea:focus {
+    box-shadow: 0 0 5px #15CD72;
+    border: 2px solid #15CD72;
+}
+
+
+ 
+button[type=submit]:hover {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	background-color: #0F9954;
+	border: 2px solid #0F9954;
+}
+
+button[type=submit]:active {
+	outline: none;
+	box-shadow: none;
+	background-color: #0A6638;
+	border: 2px solid #0A6638;
+
+}
+
+input, button {
+	height: 55px;
+	width: 320px;
+	padding: 15px;
+	font-size: 16px;
+	border-radius: 3px;
+	border: 2px solid #eaeaea;
+	font-family: 'Karla', sans-serif;
+	background-color: #f9f9f9;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+fieldset {
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+legend {
+	display: none;
+}
+
+label {
+	font-weight: bold;
+}
+
+button {
+	margin-top: 2.5px;
+	background-color: #15CD72;
+	border-color: #15CD72;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+.login {
+	margin: 30px auto 40px auto;
+}
+
+.login h2 {
+	color: #1C5F9E;
+	font-size: 16px;
+	text-align: center;
+
+}
+
+.login a{
+	color: white;
+}
+
+.login a:hover{
+	color: black;
 }
